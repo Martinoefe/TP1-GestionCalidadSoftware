@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  contador:
+    build: .
+    container_name: contador
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
